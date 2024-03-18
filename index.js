@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/48-gr-qa-platform', (req, res) => {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
     return res.sendFile(path.join(__dirname, 'static/index.html'));
